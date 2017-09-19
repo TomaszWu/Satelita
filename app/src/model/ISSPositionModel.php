@@ -1,14 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: tomasz
- * Date: 09.09.17
- * Time: 21:31
- */
 
-//namespace src\Classes;
-
-class ISSPosition
+class ISSPositionModel
 {
 
 

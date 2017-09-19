@@ -1,11 +1,8 @@
 <?php
 
-//namespace src\service;
-
-//use \src\classes\ISSPosition;
 
 
-class GetPosition
+class TranslatePosition
 {
 
     const KEY_TO_API = 'AIzaSyC9TgSJSS_majHnmDK5oGS-gTRTRg-XUw0';
@@ -22,10 +19,6 @@ class GetPosition
 
         $latlng = $this->ISSPostion->latitude;
         $longitude = $this->ISSPostion->longitude;
-
-        $latlng = '42.940196328501';
-        $longitude = '90.991037086147';
-
 
         $ch = curl_init();
 

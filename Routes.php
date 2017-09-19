@@ -3,12 +3,6 @@
 
 Route::set('index.php', function(){
 
-    ShowPositionController::showPosition('ShowPositionView');
+    ISSPositionController::showPosition();
 });
 
-
-
-Route::set('test-us', function(){
-
-    Test::CreateView('test');
-});
