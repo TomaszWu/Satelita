@@ -1,0 +1,311 @@
+{
+    "results": [
+        {
+            "address_components": [
+                {
+                    "long_name": "486 Cun Dao",
+                    "short_name": "486 Cun Dao",
+                    "types": [
+                        "route"
+                    ]
+                },
+                {
+                    "long_name": "Shanshan Xian",
+                    "short_name": "Shanshan Xian",
+                    "types": [
+                        "political",
+                        "sublocality",
+                        "sublocality_level_1"
+                    ]
+                },
+                {
+                    "long_name": "Tulufan Shi",
+                    "short_name": "Tulufan Shi",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Xinjiang Weiwuerzizhiqu",
+                    "short_name": "Xinjiang Weiwuerzizhiqu",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Chiny",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "486 Cun Dao, Shanshan Xian, Tulufan Shi, Xinjiang Weiwuerzizhiqu, Chiny",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 42.9648302,
+                        "lng": 91.28724340000001
+                    },
+                    "southwest": {
+                        "lat": 42.6966132,
+                        "lng": 90.79704810000001
+                    }
+                },
+                "location": {
+                    "lat": 42.8077474,
+                    "lng": 91.02387979999999
+                },
+                "location_type": "GEOMETRIC_CENTER",
+                "viewport": {
+                    "northeast": {
+                        "lat": 42.9648302,
+                        "lng": 91.28724340000001
+                    },
+                    "southwest": {
+                        "lat": 42.6966132,
+                        "lng": 90.79704810000001
+                    }
+                }
+            },
+            "place_id": "ChIJla0BnG3t-TcRhmWnfL-wxow",
+            "types": [
+                "route"
+            ]
+        },
+        {
+            "address_components": [
+                {
+                    "long_name": "Shanshan",
+                    "short_name": "Shanshan",
+                    "types": [
+                        "political",
+                        "sublocality",
+                        "sublocality_level_1"
+                    ]
+                },
+                {
+                    "long_name": "Turfan",
+                    "short_name": "Turfan",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Sinciang",
+                    "short_name": "Sinciang",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Chiny",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Shanshan, Turfan, Sinciang, Chiny",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 43.5541005,
+                        "lng": 91.9174707
+                    },
+                    "southwest": {
+                        "lat": 41.1976671,
+                        "lng": 89.39764679999999
+                    }
+                },
+                "location": {
+                    "lat": 42.868744,
+                    "lng": 90.21333
+                },
+                "location_type": "APPROXIMATE",
+                "viewport": {
+                    "northeast": {
+                        "lat": 43.5541005,
+                        "lng": 91.9174707
+                    },
+                    "southwest": {
+                        "lat": 41.1976671,
+                        "lng": 89.39764679999999
+                    }
+                }
+            },
+            "place_id": "ChIJX0AqYKB19zcR0LNmkgjfuEA",
+            "types": [
+                "political",
+                "sublocality",
+                "sublocality_level_1"
+            ]
+        },
+        {
+            "address_components": [
+                {
+                    "long_name": "Turfan",
+                    "short_name": "Turfan",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Sinciang",
+                    "short_name": "Sinciang",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Chiny",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Turfan, Sinciang, Chiny",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 43.63268,
+                        "lng": 91.9174707
+                    },
+                    "southwest": {
+                        "lat": 41.1976671,
+                        "lng": 87.364453
+                    }
+                },
+                "location": {
+                    "lat": 42.951303,
+                    "lng": 89.189752
+                },
+                "location_type": "APPROXIMATE",
+                "viewport": {
+                    "northeast": {
+                        "lat": 43.63268,
+                        "lng": 91.9174707
+                    },
+                    "southwest": {
+                        "lat": 41.1976671,
+                        "lng": 87.364453
+                    }
+                }
+            },
+            "place_id": "ChIJgeVGvE0RAzgRHHbZ5zG_rpo",
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        {
+            "address_components": [
+                {
+                    "long_name": "Sinciang",
+                    "short_name": "Sinciang",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Chiny",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Sinciang, Chiny",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 49.1823419,
+                        "lng": 96.38619399999999
+                    },
+                    "southwest": {
+                        "lat": 34.3345028,
+                        "lng": 73.50235499999999
+                    }
+                },
+                "location": {
+                    "lat": 42.5246357,
+                    "lng": 87.5395855
+                },
+                "location_type": "APPROXIMATE",
+                "viewport": {
+                    "northeast": {
+                        "lat": 49.1823419,
+                        "lng": 96.38619399999999
+                    },
+                    "southwest": {
+                        "lat": 34.3345028,
+                        "lng": 73.50235499999999
+                    }
+                }
+            },
+            "place_id": "ChIJq017_YwABjgRoQdnNuwWQag",
+            "types": [
+                "administrative_area_level_1",
+                "political"
+            ]
+        },
+        {
+            "address_components": [
+                {
+                    "long_name": "Chiny",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Chiny",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 53.56097399999999,
+                        "lng": 134.7728099
+                    },
+                    "southwest": {
+                        "lat": 17.9996,
+                        "lng": 73.4994136
+                    }
+                },
+                "location": {
+                    "lat": 35.86166,
+                    "lng": 104.195397
+                },
+                "location_type": "APPROXIMATE",
+                "viewport": {
+                    "northeast": {
+                        "lat": 53.56097399999999,
+                        "lng": 134.7728099
+                    },
+                    "southwest": {
+                        "lat": 17.9996,
+                        "lng": 73.4994136
+                    }
+                }
+            },
+            "place_id": "ChIJwULG5WSOUDERbzafNHyqHZU",
+            "types": [
+                "country",
+                "political"
+            ]
+        }
+    ],
+    "status": "OK"
+}
