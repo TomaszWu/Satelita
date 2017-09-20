@@ -4,9 +4,16 @@ require_once __DIR__ . '/../model/ISSPositionModel.php';
 require_once __DIR__ . '/../services/TranslatePosition.php';
 
 
+/**
+ * Class ISSPositionController
+ */
 class ISSPositionController extends Controller
 {
 
+
+    /**
+     * Prepare information about current ISS' position
+     */
     public static function showPosition(){
 
         $location = new ISSPositionModel();
@@ -20,8 +27,5 @@ class ISSPositionController extends Controller
 
         self::CreateView('ISSPositionView', ['currentPosition' => $currentPosition[0]]);
 
-
     }
-
-
 }

@@ -6,6 +6,10 @@ class ISSPositionModel
 
     public function __construct(){}
 
+
+    /**
+     * @return array
+     */
     public function findCurrentLocation(){
 
         $ch = curl_init();
