@@ -3,9 +3,7 @@
 class ISSPositionModel
 {
 
-
     public function __construct(){}
-
 
     /**
      * @return array

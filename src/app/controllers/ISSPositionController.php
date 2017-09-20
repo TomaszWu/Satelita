@@ -10,7 +10,6 @@ require_once __DIR__ . '/../services/TranslatePosition.php';
 class ISSPositionController extends Controller
 {
 
-
     /**
      * Prepare information about current ISS' position
      */

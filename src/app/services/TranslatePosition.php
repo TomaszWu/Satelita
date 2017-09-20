@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Service TranslatePosition
+ * Class TranslatePosition
  */
 
 class TranslatePosition
