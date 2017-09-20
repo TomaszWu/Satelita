@@ -22,7 +22,7 @@ class Route
             return true;
         }
 
-        require_once (__DIR__ . '/../views/pageNotFound.php');
+        require_once(__DIR__ . '/../views/pageNotFound.php');
 
     }
 
