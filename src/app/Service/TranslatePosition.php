@@ -9,7 +9,6 @@ namespace src\Service;
 class TranslatePosition
 {
 
-
     /**
      * @var string key to google API
      */
@@ -23,10 +22,9 @@ class TranslatePosition
 
     }
 
-
     /**
      * Function that passes ISS' latitude and longitude to google API and returns current position and address
-     * @return array
+     * @return object
      */
     public function prepareDraftPosition(){
 

@@ -8,11 +8,9 @@ class Route
     public static $validRoutes = array();
 
     /**
-     * Create a cart for the client
-     *
-     * @return bool
+     * Create a routing
      */
-    public static function set($route, $function){
+    public function set($route, $function){
 
         self::$validRoutes[] = $route;
 
@@ -20,11 +18,6 @@ class Route
 
             $function->__invoke();
 
-            return true;
         }
-
-        require_once(__DIR__ . '/../View/pageNotFound.php');
-
     }
-
 }

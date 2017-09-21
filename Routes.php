@@ -4,10 +4,24 @@ namespace Routes;
 
 use src\Core\Route;
 use src\Controller\ISSPositionController;
+use src\Model\ISSPositionModel;
 
+$route = $_GET['url'];
 
-Route::set('index.php', function(){
+switch($route):
+    case('index.php'):
 
-    ISSPositionController::showPosition();
-});
+        $route = new Route();
 
+        $route->set('index.php', function(){
+
+            $ISSPositionController = new ISSPositionController();
+
+            $ISSPositionController->showPosition();
+
+        });
+
+        break;
+    default:
+        require_once(__DIR__ . '/src/app/views/pageNotFound.php');
+endswitch;

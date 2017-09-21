@@ -15,12 +15,9 @@ class ISSPositionController extends Controller
     /**
      * Prepare information about current ISS' position
      */
-    public static function showPosition(){
+    public function showPosition(){
 
         $location = new ISSPositionModel();
-
-//        var_dump($location);
-//        exit;
 
         $location = $location->findCurrentLocation();
 
@@ -28,8 +25,7 @@ class ISSPositionController extends Controller
 
         $currentPosition = $currentPosition->prepareDraftPosition()->preparePositionToDisplay();
 
-
-        self::CreateView('ISSPositionView', ['currentPosition' => $currentPosition[0]]);
+        $this->CreateView('ISSPositionView', ['currentPosition' => $currentPosition[0]]);
 
     }
 }

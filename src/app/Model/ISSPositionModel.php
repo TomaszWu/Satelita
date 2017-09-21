@@ -7,10 +7,7 @@ class ISSPositionModel
 
     public $currentLocation = [];
 
-    public function __construct(){
-        $this->currentLocation = self::findCurrentLocation();
-
-    }
+    public function __construct(){}
 
     /**
      * @return array
