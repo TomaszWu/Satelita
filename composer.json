@@ -1,7 +1,7 @@
 {
     "autoload": {
-        "psr-4": { "src\\classes\\": "src/Classes/",
-                "src\\service\\": "src/Service/" }
+        "psr-4": { "src\\": "src/app",
+                "Routes\\": "/"}
     }
 }
 

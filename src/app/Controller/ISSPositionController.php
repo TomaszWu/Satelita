@@ -1,8 +1,10 @@
 <?php
 
-require_once __DIR__ . '/../model/ISSPositionModel.php';
-require_once __DIR__ . '/../services/TranslatePosition.php';
+namespace src\Controller;
 
+use src\Model\ISSPositionModel;
+use src\Service\TranslatePosition;
+use src\Controller\Controller;
 
 /**
  * Class ISSPositionController
@@ -16,6 +18,9 @@ class ISSPositionController extends Controller
     public static function showPosition(){
 
         $location = new ISSPositionModel();
+
+//        var_dump($location);
+//        exit;
 
         $location = $location->findCurrentLocation();
 

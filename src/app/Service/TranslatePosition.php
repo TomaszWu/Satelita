@@ -1,5 +1,7 @@
 <?php
 
+namespace src\Service;
+
 /**
  * Class TranslatePosition
  */

@@ -1,9 +1,16 @@
 <?php
 
+namespace src\Model;
+
 class ISSPositionModel
 {
 
-    public function __construct(){}
+    public $currentLocation = [];
+
+    public function __construct(){
+        $this->currentLocation = self::findCurrentLocation();
+
+    }
 
     /**
      * @return array

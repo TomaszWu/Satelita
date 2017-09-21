@@ -1,5 +1,6 @@
 <?php
 
+namespace src\Core;
 
 class Route
 {
@@ -22,7 +23,7 @@ class Route
             return true;
         }
 
-        require_once(__DIR__ . '/../views/pageNotFound.php');
+        require_once(__DIR__ . '/../View/pageNotFound.php');
 
     }
 

@@ -1,6 +1,7 @@
 <?php
+require __DIR__ . '/vendor/autoload.php';
 
-require_once('src/app/core/Route.php');
+use src\Core\Route;
 require_once ('Routes.php');
 
 function __autoload($class_name)
