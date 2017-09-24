@@ -5,12 +5,24 @@ namespace src\Model;
 class ISSPositionModel
 {
 
-    public $currentLocation = [];
-
-    public function __construct(){}
+    /**
+     * @var string
+     */
+    public $latitude;
 
     /**
-     * @return array
+     * @var string
+     */
+    public $longitude;
+
+
+    public function __construct($latitude = 0, $longitude = 0){
+        $this->longitude = $latitude;
+        $this->longitude = $longitude;
+    }
+
+    /**
+     * @return object
      */
     public function findCurrentLocation(){
 
@@ -22,6 +34,46 @@ class ISSPositionModel
                 'Content-Type: application/json')
         );
         $result = curl_exec($ch);
-        return json_decode($result);
+        $result = json_decode($result, true);
+        $currentLocation = new ISSPositionModel();
+        $currentLocation->setLatitude($result['latitude']);
+        $currentLocation->setLongitude($result['longitude']);
+
+        return $currentLocation;
     }
+
+
+    /**
+     * @return mixed
+     */
+    public function getLatitude()
+    {
+        return $this->latitude;
+    }
+
+    /**
+     * @param mixed $latitude
+     */
+    public function setLatitude($latitude)
+    {
+        $this->latitude = $latitude;
+    }
+
+    /**
+     * @return int
+     */
+    public function getLongitude()
+    {
+        return $this->longitude;
+    }
+
+    /**
+     * @param int $longitude
+     */
+    public function setLongitude($longitude)
+    {
+        $this->longitude = $longitude;
+    }
+
+
 }

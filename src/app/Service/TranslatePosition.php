@@ -2,10 +2,11 @@
 
 namespace src\Service;
 
+use src\Model\ISSPositionModel;
+
 /**
  * Class TranslatePosition
  */
-
 class TranslatePosition
 {
 
@@ -14,13 +15,18 @@ class TranslatePosition
      */
     const KEY_TO_API = 'AIzaSyC9TgSJSS_majHnmDK5oGS-gTRTRg-XUw0';
 
+    /**
+     * @var array
+     */
     public $draftPosition;
 
 
-    public function __construct($ISSPostion){
-        $this->ISSPostion = $ISSPostion;
+    public function __construct(ISSPositionModel $ISSPosition){
+        $this->ISSPosition = $ISSPosition;
 
     }
+
+
 
     /**
      * Function that passes ISS' latitude and longitude to google API and returns current position and address
@@ -28,8 +34,8 @@ class TranslatePosition
      */
     public function prepareDraftPosition(){
 
-        $latitude = $this->ISSPostion->latitude;
-        $longitude = $this->ISSPostion->longitude;
+        $latitude = $this->ISSPosition->getLatitude();
+        $longitude = $this->ISSPosition->getLatitude();
 
         $ch = curl_init();
 
@@ -40,8 +46,7 @@ class TranslatePosition
         );
         $result = curl_exec($ch);
 
-        $this->draftPosition =  (array)json_decode($result);
-
+        $this->setDraftPosition((array)json_decode($result, true));
         return $this;
     }
 
@@ -54,10 +59,26 @@ class TranslatePosition
 
         if(empty((array)$this->draftPosition['results'])){
             return array(0 => 'Stacja znajduje się gdzieś nad którymś z oceanów lub innym dużym zbiornikiem wodnym.');
+
         }
+        return (array)$this->draftPosition['results'][0]['formatted_address'];
 
-        return (array)$this->draftPosition['results'][0]->formatted_address;
+    }
 
+    /**
+     * @param mixed $draftPosition
+     */
+    public function setDraftPosition($draftPosition)
+    {
+        $this->draftPosition = $draftPosition;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDraftPosition()
+    {
+        return $this->draftPosition;
     }
 
 
